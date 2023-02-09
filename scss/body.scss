@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+
+}
+
+body {
+  // padding-bottom: 1000px;
+  overflow-x: hidden;
+  background-color: #ffffff;
+
+
+  h1.subJudul {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+
+    .iconJucul {
+      width: 10px;
+      height: 25px;
+      background-color: yellow;
+      margin-right: 15px;
+    }
+  }
+}
+
+footer {
+  margin-top: -200px;
+}

@@ -1,0 +1,145 @@
+.second-section *,
+.third-section *,
+.fourth-section *,
+.fifth-section * {
+  text-decoration: none;
+}
+.second-section .card,
+.third-section .card,
+.fourth-section .card,
+.fifth-section .card {
+  margin: 0;
+  padding: 0;
+}
+.second-section .card img,
+.third-section .card img,
+.fourth-section .card img,
+.fifth-section .card img {
+  border-radius: 10px;
+}
+.second-section .card p.titleNarasi,
+.third-section .card p.titleNarasi,
+.fourth-section .card p.titleNarasi,
+.fifth-section .card p.titleNarasi {
+  font-size: 12px;
+  margin-top: -15px;
+  text-align: left;
+}
+.second-section .card .judulBerita,
+.third-section .card .judulBerita,
+.fourth-section .card .judulBerita,
+.fifth-section .card .judulBerita {
+  margin-top: -10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+}
+.second-section .card .tanggalUpdate,
+.third-section .card .tanggalUpdate,
+.fourth-section .card .tanggalUpdate,
+.fifth-section .card .tanggalUpdate {
+  margin-top: -1px;
+  font-size: 12px;
+  color: gray;
+}
+.second-section .tombolSlide,
+.third-section .tombolSlide,
+.fourth-section .tombolSlide,
+.fifth-section .tombolSlide {
+  transform: scale(0.8);
+  color: white;
+}
+.second-section .swiper-button-next,
+.third-section .swiper-button-next,
+.fourth-section .swiper-button-next,
+.fifth-section .swiper-button-next {
+  transform: translateY(-70px);
+  margin-right: -10px;
+}
+.second-section .swiper-button-prev,
+.third-section .swiper-button-prev,
+.fourth-section .swiper-button-prev,
+.fifth-section .swiper-button-prev {
+  transform: translateY(-70px);
+  margin-left: -10px;
+}
+
+.third-section,
+.fourth-section,
+.fifth-section {
+  height: 800px;
+  background-color: rgb(248, 246, 246);
+  overflow: hidden;
+}
+.third-section .mySwiper,
+.fourth-section .mySwiper,
+.fifth-section .mySwiper {
+  height: 380px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+.third-section .mySwiper .swiper-wrapper,
+.fourth-section .mySwiper .swiper-wrapper,
+.fifth-section .mySwiper .swiper-wrapper {
+  height: 300px;
+}
+.third-section .mySwiper .swiper-wrapper .swiperslidecard,
+.fourth-section .mySwiper .swiper-wrapper .swiperslidecard,
+.fifth-section .mySwiper .swiper-wrapper .swiperslidecard {
+  background-color: rgb(248, 246, 246);
+}
+.third-section .mySwiper .swiper-wrapper .swiperslidecard .card,
+.fourth-section .mySwiper .swiper-wrapper .swiperslidecard .card,
+.fifth-section .mySwiper .swiper-wrapper .swiperslidecard .card {
+  background-color: salmon;
+  border: none;
+}
+.third-section .mySwiper .swiper-wrapper .swiperslidecard .card .judulBerita,
+.fourth-section .mySwiper .swiper-wrapper .swiperslidecard .card .judulBerita,
+.fifth-section .mySwiper .swiper-wrapper .swiperslidecard .card .judulBerita {
+  margin-top: -10px;
+  color: black;
+  font-size: 16px;
+  font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+  .third-section .mySwiper,
+.fourth-section .mySwiper,
+.fifth-section .mySwiper {
+    height: 350px;
+  }
+}
+
+.second-section h1.subJudul,
+.third-section h1.subJudul,
+.fourth-section h1.subJudul,
+.fifth-section h1.subJudul {
+  text-align: left;
+}
+
+.second-section .swiperslidecard {
+  transform: translateY(-360px);
+  z-index: 999999;
+  background-color: black;
+  position: relative;
+  margin-bottom: -360px;
+}
+.second-section .swiperslidecard .card {
+  background-color: black;
+  margin-top: 35px;
+}
+.second-section .swiperslidecard .mySwiper {
+  overflow: hidden;
+  height: 400px;
+  background-color: transparent;
+  margin-top: -30px;
+}
+.second-section .swiperslidecard .mySwiper .swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.fourth-section,
+.fifth-section {
+  margin-top: -350px;
+}/*# sourceMappingURL=allSection.css.map */

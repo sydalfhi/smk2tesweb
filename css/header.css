@@ -1,0 +1,49 @@
+.font-popin {
+  font-family: "Poppins", sans-serif;
+}
+
+header .rightHeaderItem {
+  width: 100vw;
+}
+header .smkLogoText {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tombolSearch button {
+  background-color: transparent;
+  transform: translate(10px, 5px);
+  position: absolute;
+  border: none;
+  margin: auto;
+}
+
+#searchContent {
+  margin: auto;
+  width: 300px;
+  padding: 0 35px;
+}
+#searchContent::-moz-placeholder {
+  color: gray;
+  font-size: 14px;
+}
+#searchContent:-ms-input-placeholder {
+  color: gray;
+  font-size: 14px;
+}
+#searchContent::placeholder {
+  color: gray;
+  font-size: 14px;
+}
+
+#btnLogin {
+  font-size: 16px;
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+  #searchContent {
+    width: 350px;
+    padding: 5px 40px;
+  }
+}/*# sourceMappingURL=header.css.map */

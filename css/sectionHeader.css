@@ -1,0 +1,65 @@
+.sectionHeader {
+  background-color: black;
+  background-size: cover;
+  width: 100%;
+  background-image: url(../nullgambar.jpg);
+  position: relative;
+  height: 750px;
+  transform: translateY(-50px);
+  background-repeat: no-repeat;
+}
+.sectionHeader::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+}
+.sectionHeader .textGroup {
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  transform: translate(60px, -350px);
+}
+.sectionHeader .textGroup h1 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 4.2vh;
+  margin-left: -30px;
+  width: 70%;
+}
+.sectionHeader .textGroup p {
+  font-size: 2.2vh;
+  margin-left: -30px;
+  width: 90%;
+}
+@media screen and (min-width: 768px) {
+  .sectionHeader .textGroup .sectionHeader {
+    height: 1000px;
+  }
+  .sectionHeader .textGroup .sectionHeader::after {
+    height: 300px;
+  }
+  .sectionHeader .textGroup .textGroup {
+    transform: translate(60px, -360px);
+  }
+  .sectionHeader .textGroup h1 {
+    font-size: 6vh;
+  }
+  .sectionHeader .textGroup p {
+    font-size: 2.5vh;
+  }
+}
+
+.navbarContainer {
+  padding: 10px;
+  z-index: 999999999999;
+}
+@media screen and (min-width: 768px) {
+  .navbarContainer {
+    padding: 5px;
+  }
+}/*# sourceMappingURL=sectionHeader.css.map */
