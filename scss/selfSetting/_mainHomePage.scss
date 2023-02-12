@@ -1,0 +1,74 @@
+// ! main HomePage 
+// * disini berada style berulang dari inti konten main
+
+
+@use "cardStyle"; //import file style _cardStyle
+
+%Loop_Card_Swiper_Style {
+
+  // style dari card Swiper pigination
+  * {
+    text-decoration: none;
+  }
+
+  @extend %card;
+
+  .tombolSlide {
+    transform: scale(.8);
+    color: white;
+  }
+
+}
+
+
+
+
+
+
+$background:rgb(248, 246, 246);
+
+%mainSection {
+  //style untuk swiper pigination
+  height: 800px;
+  background-color: $background;
+  overflow: hidden;
+
+  .mySwiper {
+    height: 480px;
+    background-color: transparent;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+    .swiper-wrapper {
+      height: 300px;
+
+      .swiperslidecard {
+        background-color: $background;
+
+        .card {
+          background-color: transparent;
+
+          border: none;
+
+          .judulBerita {
+            margin-top: -10px;
+            color: black;
+            font-size: 16px;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// ! RESPONSIVE BREAK POIN ===================================================================== 
+@media screen and (min-width:768px) {
+  .mySwiper {
+    height: 380px;
+  }
+}

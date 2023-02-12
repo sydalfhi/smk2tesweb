@@ -4,11 +4,9 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-
 }
 
 body {
-  // padding-bottom: 1000px;
   overflow-x: hidden;
   background-color: #ffffff;
 
@@ -27,6 +25,24 @@ body {
   }
 }
 
-footer {
-  margin-top: -200px;
+h1.TitleSection {
+  position: relative;
+}
+
+h1.TitleSection::before {
+  content: '';
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  background-color: yellow;
+  left: 0;
+}
+
+
+.linkSocialMeida {
+  //style unutk icin social media
+  margin-inline: 3px;
+  padding: 10px;
+  background-color: rgb(24, 24, 24);
+  border-radius: 3px;
 }

@@ -1,46 +1,70 @@
+.second-section,
+.third-section,
+.fourth-section,
+.fifth-section {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+.second-section img,
+.third-section img,
+.fourth-section img,
+.fifth-section img {
+  border-radius: 10px;
+}
+.second-section p.titleNarasi,
+.third-section p.titleNarasi,
+.fourth-section p.titleNarasi,
+.fifth-section p.titleNarasi {
+  font-size: 16px;
+  margin-top: -6px;
+  text-align: left;
+}
+.second-section .judulBerita,
+.third-section .judulBerita,
+.fourth-section .judulBerita,
+.fifth-section .judulBerita {
+  margin-top: -10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.imageall,
+.imageall_secondSectoin {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imageall_secondSectoin::before, .imageall::before {
+  z-index: 88;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  border-bottom-left-radius: 10px;
+  content: url("../asset/img/book-read-fill.png");
+  text-align: center;
+  font-size: 13px;
+  color: white;
+}
+
+.imageall::before {
+  width: 50px;
+  height: 20px;
+}
+
+.imageall_secondSectoin::before {
+  width: 50px;
+  height: 20px;
+}
+
 .second-section *,
 .third-section *,
 .fourth-section *,
 .fifth-section * {
   text-decoration: none;
-}
-.second-section .card,
-.third-section .card,
-.fourth-section .card,
-.fifth-section .card {
-  margin: 0;
-  padding: 0;
-}
-.second-section .card img,
-.third-section .card img,
-.fourth-section .card img,
-.fifth-section .card img {
-  border-radius: 10px;
-}
-.second-section .card p.titleNarasi,
-.third-section .card p.titleNarasi,
-.fourth-section .card p.titleNarasi,
-.fifth-section .card p.titleNarasi {
-  font-size: 12px;
-  margin-top: -15px;
-  text-align: left;
-}
-.second-section .card .judulBerita,
-.third-section .card .judulBerita,
-.fourth-section .card .judulBerita,
-.fifth-section .card .judulBerita {
-  margin-top: -10px;
-  color: white;
-  font-size: 16px;
-  font-weight: 300;
-}
-.second-section .card .tanggalUpdate,
-.third-section .card .tanggalUpdate,
-.fourth-section .card .tanggalUpdate,
-.fifth-section .card .tanggalUpdate {
-  margin-top: -1px;
-  font-size: 12px;
-  color: gray;
 }
 .second-section .tombolSlide,
 .third-section .tombolSlide,
@@ -48,20 +72,6 @@
 .fifth-section .tombolSlide {
   transform: scale(0.8);
   color: white;
-}
-.second-section .swiper-button-next,
-.third-section .swiper-button-next,
-.fourth-section .swiper-button-next,
-.fifth-section .swiper-button-next {
-  transform: translateY(-70px);
-  margin-right: -10px;
-}
-.second-section .swiper-button-prev,
-.third-section .swiper-button-prev,
-.fourth-section .swiper-button-prev,
-.fifth-section .swiper-button-prev {
-  transform: translateY(-70px);
-  margin-left: -10px;
 }
 
 .third-section,
@@ -74,9 +84,11 @@
 .third-section .mySwiper,
 .fourth-section .mySwiper,
 .fifth-section .mySwiper {
-  height: 380px;
+  height: 480px;
   background-color: transparent;
   box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
 .third-section .mySwiper .swiper-wrapper,
 .fourth-section .mySwiper .swiper-wrapper,
@@ -91,7 +103,7 @@
 .third-section .mySwiper .swiper-wrapper .swiperslidecard .card,
 .fourth-section .mySwiper .swiper-wrapper .swiperslidecard .card,
 .fifth-section .mySwiper .swiper-wrapper .swiperslidecard .card {
-  background-color: salmon;
+  background-color: transparent;
   border: none;
 }
 .third-section .mySwiper .swiper-wrapper .swiperslidecard .card .judulBerita,
@@ -102,14 +114,12 @@
   font-size: 16px;
   font-weight: 300;
 }
+
 @media screen and (min-width: 768px) {
-  .third-section .mySwiper,
-.fourth-section .mySwiper,
-.fifth-section .mySwiper {
-    height: 350px;
+  .mySwiper {
+    height: 380px;
   }
 }
-
 .second-section h1.subJudul,
 .third-section h1.subJudul,
 .fourth-section h1.subJudul,
@@ -117,12 +127,19 @@
   text-align: left;
 }
 
+.third-section {
+  margin-top: 300px;
+}
+
+.second-section {
+  transform: translateY(50px);
+}
 .second-section .swiperslidecard {
-  transform: translateY(-360px);
+  transform: translateY(0px);
   z-index: 999999;
   background-color: black;
   position: relative;
-  margin-bottom: -360px;
+  margin-bottom: -300px;
 }
 .second-section .swiperslidecard .card {
   background-color: black;
@@ -130,7 +147,7 @@
 }
 .second-section .swiperslidecard .mySwiper {
   overflow: hidden;
-  height: 400px;
+  height: 450px;
   background-color: transparent;
   margin-top: -30px;
 }
@@ -141,5 +158,20 @@
 
 .fourth-section,
 .fifth-section {
-  margin-top: -350px;
-}/*# sourceMappingURL=allSection.css.map */
+  margin-top: -300px;
+}
+
+@media screen and (min-width: 768px) {
+  .second-section {
+    transform: translateY(-200px);
+  }
+  .swiperslidecard {
+    transform: translateY(0px);
+  }
+  .mySwiper {
+    height: 400px;
+  }
+  .third-section {
+    margin-top: 100px;
+  }
+}/*# sourceMappingURL=allsection.css.map */

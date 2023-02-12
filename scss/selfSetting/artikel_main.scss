@@ -1,0 +1,53 @@
+@use "cardStyle";
+@use "mainHomePage";
+
+#grid_otherArtikel {
+  .card {
+    @extend %card;
+
+
+
+
+    p.titleNarasi {
+      margin-top: -6px;
+      font-size: 10px;
+    }
+
+    .judulBerita {
+      font-size: 12px;
+
+    }
+
+    .tanggalUpdate {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (min-width:768px) {
+    .tanggalUpdate {
+      font-size: 16px;
+    }
+
+    p.titleNarasi {
+      font-size: 12px;
+      ;
+    }
+
+    .judulBerita {
+      font-size: 12px;
+    }
+  }
+}
+
+
+
+.sectionSlide {
+  height: 600px;
+
+  .card {
+    width: 18rem;
+  }
+
+  @extend %Loop_Card_Swiper_Style;
+  @extend %mainSection;
+}

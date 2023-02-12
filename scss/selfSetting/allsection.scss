@@ -1,0 +1,99 @@
+//! allsection main
+//* berisi semua setingan section di main pada home page, berisi pada bagian main
+
+// impor file lain
+@use "mainHomePage"; //import file _mainHomePage
+
+
+.second-section,
+.third-section,
+.fourth-section,
+.fifth-section {
+  @extend %Loop_Card_Swiper_Style; //diimport dari _mainsection
+
+  h1.subJudul {
+    text-align: left;
+  }
+}
+
+.third-section {
+  margin-top: 300px;
+}
+
+.third-section,
+.fourth-section,
+.fifth-section {
+  @extend %mainSection; //diimport dari _mainSection
+}
+
+
+
+
+// ?Selft Seeting
+
+// todo 2th section
+.second-section {
+  transform: translateY(50px);
+
+  .swiperslidecard {
+    transform: translateY(0px);
+    z-index: 999999;
+    background-color: black;
+    position: relative;
+    margin-bottom: -300px;
+
+    .card {
+      background-color: black;
+      margin-top: 35px;
+    }
+
+    .mySwiper {
+      overflow: hidden;
+      height: 450px;
+      background-color: transparent;
+      margin-top: -30px;
+
+      .swiper-wrapper {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+
+
+
+
+// todo end 4th & 5thsection
+.fourth-section,
+.fifth-section {
+  margin-top: -300px;
+
+}
+
+// todo end 4th section
+
+
+
+
+// ! RESPONSIVE BREAK POIN =====================================================================
+
+@media screen and (min-width:768px) {
+
+  .second-section {
+    transform: translateY(-200px);
+  }
+
+  .swiperslidecard {
+    transform: translateY(0px);
+  }
+
+  .mySwiper {
+    height: 400px;
+  }
+
+  .third-section {
+    margin-top: 100px;
+  }
+}
