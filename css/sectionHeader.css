@@ -1,7 +1,8 @@
 .sectionHeader {
   background-color: black;
-  background-image: url(../asset/img/luarsekolah.jpg);
+  background-image: url(../../nullgambar.jpg);
   background-size: contain;
+  background-size: cover;
   width: 100%;
   position: relative;
   height: 400px;

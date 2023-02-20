@@ -4,7 +4,7 @@
   padding: 0;
 }
 #grid_otherArtikel .card img, .sectionSlide img {
-  border-radius: 10px;
+  border-radius: 15px;
 }
 #grid_otherArtikel .card p.titleNarasi, .sectionSlide p.titleNarasi {
   font-size: 16px;
@@ -57,7 +57,7 @@
 }
 
 .sectionSlide {
-  height: 800px;
+  height: 600px;
   background-color: rgb(248, 246, 246);
   overflow: hidden;
 }
